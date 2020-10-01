@@ -15,7 +15,7 @@
     <body class="bg-gray-100">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="text-right p-8">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -27,9 +27,9 @@
                     @endauth
                 </div>
             @endif
-            <div class="p-8">
-                <img class="w-1/6 rounded-lg shadow-xl" src="\img\logo.jpg" alt="logo">
-                <h1 class="text-4xl font-hairline text-blue-600"><i class="fas fa-stream"></i>Категории</h1>
+            <div class="p-8 text-center">
+                <img class="w-1/6 rounded-lg shadow-xl mx-auto" src="\img\logo.jpg" alt="logo">
+                <h1 class="text-4xl font-hairline text-blue-600 mt-10"><i class="fas fa-stream mr-6"></i>Категории</h1>
             </div>
                 <i class="fas fa-camera"></i>
 {{--            <div class="content">--}}
